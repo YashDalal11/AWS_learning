@@ -1,0 +1,57 @@
+Reserved Instance
+
+Example: Switching After 4 Months (m5.large → c5.large)
+Initial Plan (m5.large)
+Total cost: $550/year
+Paid for 4 months: $183
+Remaining value for 8 months: $367
+
+New Plan (c5.large)
+Total cost: $600/year
+Cost for remaining 8 months: $400
+
+Cost Adjustment Calculation
+Extra cost = $400 - $367 = $33
+
+Instead of a one-time payment, AWS spreads this over the remaining 8 months:
+33÷8=4.13 USD extra per month
+
+New Monthly Cost After Switching
+Old cost: $45.83/month
+New cost: $50/month ($45.83 + $4.13)
+
+Scenarios If You Don't Use the Instance
+1️⃣ Standard RI (Fixed Commitment)
+You still pay the full amount even if you don’t use the instance.
+AWS does not refund or pause your RI.
+Example:
+You bought m5.large Standard RI for 1 year at $550.
+You don’t use it at all.
+You still pay $550 for the entire year.
+
+Convertible RI (Flexible, But Still Charged)
+You still pay for it, even if you don’t use it.
+But, you can convert it to another instance family/type.
+Example:
+You bought m5.large Convertible RI for 1 year at $550.
+You don’t use it but need c5.large instead.
+You convert it to c5.large and continue using the new instance.
+
+
+Can You Cancel or Sell an Unused RI?
+✔ For Standard RIs
+
+You CANNOT cancel it.
+But, you can sell it on the AWS Reserved Instance Marketplace if it’s a Standard RI (1-year or 3-year term paid fully upfront).
+AWS allows you to list your RI for sale, and if someone buys it, you get your money back.
+✔ For Convertible RIs
+
+You CANNOT sell them.
+But, you can convert to a different instance type that you might need.
+
+
+
+
+Saving Plan
+
+
